@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/idisblueflash/sandworms/issues"
   },
-  "homepage": "https://github.com/idisblueflash/sandworms#readme"
+  "homepage": "https://github.com/idisblueflash/sandworms#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
