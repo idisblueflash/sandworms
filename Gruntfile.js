@@ -1,5 +1,10 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+    clean: {
+      js: 'build/js',
+      css: 'build/css',
+      less: 'public/**/*.css'
+    },
     sprite: {
       icons: {
         src: 'public/img/icons/*.png',
@@ -31,6 +36,7 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
