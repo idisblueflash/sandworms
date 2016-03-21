@@ -15,7 +15,7 @@ module.exports = function (grunt) {
       icons: {
         src: 'public/img/icons/*.png',
         dest: 'build/img/iconss.png',
-        destcss: 'build/css/icons.css'
+        destCss: 'build/css/icons.css'
       }
     },
     uglify: {
