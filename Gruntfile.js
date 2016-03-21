@@ -3,8 +3,8 @@ module.exports = function (grunt) {
     sprite: {
       icons: {
         src: 'public/img/icons/*.png',
-        destImg: 'build/img/iconss.png',
-        destCSS: 'build/css/icons.css'
+        dest: 'build/img/iconss.png',
+        destCss: 'build/css/icons.css'
       }
     },
     uglify: {
