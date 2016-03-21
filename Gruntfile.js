@@ -2,6 +2,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     jshint: {
       client: [
+        'Gruntfile.js',
         'public/js/**/*.js',
         '!public/js/vendor'
         ]
@@ -50,3 +51,4 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['jshint']); 
   grunt.registerTask('js', 'Concatenate and minify static JavaScript assets', ['concat:js', 'uglify:bundle']); 
 };
+
