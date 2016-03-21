@@ -1,5 +1,12 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+    uglify: {
+      bundle: {
+        files: {
+          'build/js/bundle.min.js': 'build/js/bundle.js'
+        }
+      }
+    },
     jshint: ['Gruntfile.js'],
     less: {
       compile: {
