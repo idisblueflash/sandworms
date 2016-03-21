@@ -1,11 +1,11 @@
 module.exports = function (grunt) {
-  jshint: {
-    client: [
-      'public/js/**/*.js',
-      '!public/js/vendor'
-      ]
-  },
   grunt.initConfig({
+    jshint: {
+      client: [
+        'public/js/**/*.js',
+        '!public/js/vendor'
+        ]
+    },
     clean: {
       js: 'build/js',
       css: 'build/css',
@@ -15,7 +15,7 @@ module.exports = function (grunt) {
       icons: {
         src: 'public/img/icons/*.png',
         dest: 'build/img/iconss.png',
-        destCss: 'build/css/icons.css'
+        destcss: 'build/css/icons.css'
       }
     },
     uglify: {
