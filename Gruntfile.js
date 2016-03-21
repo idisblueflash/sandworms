@@ -1,5 +1,10 @@
 module.exports = function (grunt) {
   grunt.initConfig({
+    sprite: {
+      icons: {
+        src: 'public/img/icons/*.png',
+        destImg: 'build/img/iconss.png',
+        destCSS: 'build/css/icons.css'
     uglify: {
       bundle: {
         files: {
@@ -23,6 +28,8 @@ module.exports = function (grunt) {
       }
     }
   });
+
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
