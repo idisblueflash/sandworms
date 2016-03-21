@@ -24,6 +24,7 @@
   "homepage": "https://github.com/idisblueflash/sandworms#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-less": "^1.2.0"
   }
