@@ -1,4 +1,10 @@
 module.exports = function (grunt) {
+  jshint: {
+    client: [
+      'public/js/**/*.js',
+      '!public/js/vendor'
+      ]
+  },
   grunt.initConfig({
     clean: {
       js: 'build/js',
@@ -19,7 +25,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    jshint: ['Gruntfile.js'],
     less: {
       compile: {
         files: {
