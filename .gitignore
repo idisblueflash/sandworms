@@ -5,3 +5,5 @@ build/
 db.json
 
 npm-debug.log
+
+mysql_scripts/160409.01_some-user.seed.sql
