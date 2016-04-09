@@ -3,9 +3,9 @@ var coder = require('./lib/coder');
 var mysql = require('mysql');
 
 var options = require('./db.json');
-options.database = options.db; // work around for db.json file
+options.credentials.database = options.db; // work around for db.json file
 
-var db = mysql.createConnection(options);
+var db = mysql.createConnection(options.credentials);
 
 var server = http.createServer(function(req, res) {
 	switch (req.method) {
