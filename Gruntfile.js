@@ -46,6 +46,9 @@ module.exports = function (grunt) {
           'build/js/bundle.js': 'public/js/**/*.js'
         }
       } 
+    },
+    tape: {
+      files: ['test/**/*.js']
     }
   });
 
@@ -55,6 +58,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-tape');
 
     // load all the tasks in the `tasks/` directory
   grunt.loadTasks('./tasks');
@@ -63,6 +67,7 @@ module.exports = function (grunt) {
   grunt.registerTask('db_setup', 'Create, update, and seed a new database', ['db_create', 'db_upgrade', 'db_seed']);
 
   grunt.registerTask('default', ['jshint']); 
+   grunt.registerTask('test', ['jshint', 'tape']); 
   grunt.registerTask('js', 'Concatenate and minify static JavaScript assets', ['concat:js', 'uglify:bundle']); 
 };
 

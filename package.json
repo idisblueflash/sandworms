@@ -4,7 +4,7 @@
   "description": "an online task market which was inspired by DND",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "grunt-contrib-less": "^1.2.0",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-spritesmith": "^6.3.1",
+    "grunt-tape": "0.0.2",
     "mysql": "^2.10.2",
     "underscore": "^1.8.3"
   },
