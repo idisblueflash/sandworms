@@ -4,6 +4,7 @@ machine:
 dependencies:
   pre:
     - npm install -g grunt-cli
+    - npm install --dev
   override:
     - echo $scp_db_from_test > scp.sh
     - sh scp.sh
