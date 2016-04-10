@@ -3,7 +3,5 @@ machine:
     version: 5.6.0
 dependencies:
   override:
-    - echo $scp_from_test > scp.sh
+    - echo $scp_db_from_test > scp.sh
     - sh scp.sh
-    - gpg --import sandworm.key
-    - gpg --output db.json --decrypt db.json.gpg
