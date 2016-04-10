@@ -1,6 +1,6 @@
 {
   "name": "sandworms",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "an online task market which was inspired by DND",
   "main": "app.js",
   "scripts": {
