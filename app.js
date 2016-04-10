@@ -1,4 +1,5 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 var coder = require('./lib/coder');
 var mysql = require('mysql');
 
@@ -7,17 +8,8 @@ options.credentials.database = options.db; // work around for db.json file
 
 var db = mysql.createConnection(options.credentials);
 
-var server = http.createServer(function(req, res) {
-	switch (req.method) {
-		case 'GET':
-			switch(req.url) {
-				case '/coders':
-					coder.list(db, req, res);
-					break;
-			}
-		break;
-	}
+app.get('/coders', function(req, res){
+  coder.list(db, req, res);
 });
 
-console.log('Server started...');
-server.listen(3000, '127.0.0.1');
+app.listen(3000);
