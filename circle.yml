@@ -4,5 +4,6 @@ machine:
 dependencies:
   override:
     - echo $decrypt_key > my.key
+    - more my.key
     - gpg --import my.key
     - gpg --output db.json --decrypt db.json.gpg
