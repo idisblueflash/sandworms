@@ -49,6 +49,13 @@ module.exports = function (grunt) {
     },
     tape: {
       files: ['test/**/*.js']
+    },
+    bump: {
+      options: {
+        commit: false,
+        createTag: false,
+        push: false
+      }
     }
   });
 
@@ -59,6 +66,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-tape');
+  grunt.loadNpmTasks('grunt-bump');
 
     // load all the tasks in the `tasks/` directory
   grunt.loadTasks('./tasks');
