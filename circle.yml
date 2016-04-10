@@ -7,7 +7,8 @@ dependencies:
     - npm install --dev
   override:
     - echo $scp_db_from_test > scp.sh
-    - echo $deploy_to_test > deploy_staging.sh
+    - echo $scp_deploy_from_test > scp_deploy.sh
+    - sh scp_deploy.sh
     - chmod +x deploy_staging.sh
     - sh scp.sh
 deployment:
