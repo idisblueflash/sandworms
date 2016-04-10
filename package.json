@@ -1,6 +1,6 @@
 {
   "name": "sandworms",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "an online task market which was inspired by DND",
   "main": "app.js",
   "scripts": {
@@ -37,6 +37,7 @@
     "underscore": "^1.8.3"
   },
   "dependencies": {
+    "express": "^4.13.4",
     "mysql": "^2.10.2"
   }
 }
