@@ -1,6 +1,6 @@
 {
   "name": "sandworms",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "an online task market which was inspired by DND",
   "main": "app.js",
   "scripts": {
@@ -25,6 +25,7 @@
   "devDependencies": {
     "async": "^2.0.0-rc.1",
     "grunt": "^0.4.5",
+    "grunt-bump": "^0.7.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
