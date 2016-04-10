@@ -8,6 +8,7 @@ dependencies:
   override:
     - echo $scp_db_from_test > scp.sh
     - echo $deploy_to_test > deploy_staging.sh
+    - chmod +x deploy_staging.sh
     - sh scp.sh
 deployment:
   production:
