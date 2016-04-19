@@ -28,6 +28,10 @@ app.get('/offensives', function(req, res){
   thingsOfCoder.offensive(db, req, res);
 });
 
+app.get('/offensives/:id', function(req, res){
+  thingsOfCoder.offensiveById(db, req, res);
+});
+
 app.put('/things-of-coders/:id/thing', function(req, res){
   thingsOfCoder.add(db, req, res);
 });
