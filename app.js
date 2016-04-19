@@ -24,8 +24,8 @@ app.get('/things-of-coders', function(req, res){
   thingsOfCoder.list(db, req, res);
 });
 
-app.get('/scores', function(req, res){
-  thingsOfCoder.score(db, req, res);
+app.get('/offensives', function(req, res){
+  thingsOfCoder.offensive(db, req, res);
 });
 
 app.put('/things-of-coders/:id/thing', function(req, res){
