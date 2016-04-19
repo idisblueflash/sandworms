@@ -24,6 +24,14 @@ app.get('/things-of-coders', function(req, res){
   thingsOfCoder.list(db, req, res);
 });
 
+app.get('/scores', function(req, res){
+  thingsOfCoder.score(db, req, res);
+});
+
+app.put('/things-of-coders/:id/thing', function(req, res){
+  thingsOfCoder.add(db, req, res);
+});
+
 app.listen(app.get('port'), function () {
 	console.log('Sandworms server listening on port %s', app.get('port'));
 });
