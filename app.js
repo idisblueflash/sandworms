@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var coder = require('./lib/coder');
 var thing = require('./lib/thing');
+var thingsOfCoder = require('./lib/thingsOfCoder');
 var mysql = require('mysql');
 
 var options = require('./db.json');
@@ -17,6 +18,10 @@ app.get('/coders', function(req, res){
 
 app.get('/things', function(req, res){
   thing.list(db, req, res);
+});
+
+app.get('/things-of-coders', function(req, res){
+  thingsOfCoder.list(db, req, res);
 });
 
 app.listen(app.get('port'), function () {
