@@ -24,12 +24,12 @@ app.get('/things-of-coders', function(req, res){
   thingsOfCoder.list(db, req, res);
 });
 
-app.get('/offensives', function(req, res){
-  thingsOfCoder.offensive(db, req, res);
+app.get('/points', function(req, res){
+  thingsOfCoder.point(db, req, res);
 });
 
-app.get('/offensives/:id', function(req, res){
-  thingsOfCoder.offensiveById(db, req, res);
+app.get('/points/:id', function(req, res){
+  thingsOfCoder.pointById(db, req, res);
 });
 
 app.put('/things-of-coders/:id/thing', function(req, res){
