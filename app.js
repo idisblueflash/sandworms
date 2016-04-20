@@ -32,6 +32,10 @@ app.get('/utility', function(req, res){
   thingsOfCoder.utility(db, req, res);
 });
 
+app.get('/assists', function(req, res){
+  thingsOfCoder.assists(db, req, res);
+});
+
 app.get('/points/:id', function(req, res){
   thingsOfCoder.pointById(db, req, res);
 });
