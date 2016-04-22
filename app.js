@@ -28,7 +28,7 @@ app.get('/points', function(req, res){
   thingsOfCoder.point(db, req, res);
 });
 
-app.get('/utility', function(req, res){
+app.get('/utilities', function(req, res){
   thingsOfCoder.utility(db, req, res);
 });
 
