@@ -36,6 +36,10 @@ app.get('/utilities', function(req, res){
   thingsOfCoder.utility(db, req, res);
 });
 
+app.get('/utilities/:weekNum', function(req, res){
+  thingsOfCoder.utility(db, req, res);
+});
+
 app.get('/assists', function(req, res){
   thingsOfCoder.assists(db, req, res);
 });
