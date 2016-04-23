@@ -44,6 +44,10 @@ app.get('/assists', function(req, res){
   thingsOfCoder.assists(db, req, res);
 });
 
+app.get('/assists/:weekNum', function(req, res){
+  thingsOfCoder.assists(db, req, res);
+});
+
 app.put('/things-of-coders/:id/thing', function(req, res){
   thingsOfCoder.add(db, req, res);
 });
