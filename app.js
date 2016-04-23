@@ -25,7 +25,11 @@ app.get('/things-of-coders', function(req, res){
 });
 
 app.get('/points', function(req, res){
-  thingsOfCoder.point(db, req, res);
+  thingsOfCoder.points(db, req, res);
+});
+
+app.get('/points/:weekNum', function(req, res){
+  thingsOfCoder.points(db, req, res);
 });
 
 app.get('/utilities', function(req, res){
@@ -34,10 +38,6 @@ app.get('/utilities', function(req, res){
 
 app.get('/assists', function(req, res){
   thingsOfCoder.assists(db, req, res);
-});
-
-app.get('/points/:id', function(req, res){
-  thingsOfCoder.pointById(db, req, res);
 });
 
 app.put('/things-of-coders/:id/thing', function(req, res){
